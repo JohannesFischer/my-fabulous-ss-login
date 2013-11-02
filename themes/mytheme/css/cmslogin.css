@@ -1,0 +1,113 @@
+/* CMS LOGIN
+-----------------------------------------------*/
+
+body {
+	font-family: sans-serif;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.LoginPage {
+	background: radial-gradient(#B0BEC7, #22385B);
+}
+
+.PageContent {
+	background: #333;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+	}
+	.PageContent p {
+		color: #eee;
+		font-size: 0.8em;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+	.PageContent a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+#CMSLogin {
+	background: url(/framework/admin/images/silverstripe_logo.png) 50% 0 no-repeat;
+	margin: 5% auto 0;
+	padding: 200px 0 0;
+	width: 350px;
+	}
+
+p.message.bad {
+	background: #FFFBEA;
+	border: 1px solid #333;
+	border-radius: 5px;
+	box-shadow: inset 5px 5px 5px #eee;
+	color: #666;
+	padding: 10px;
+}
+
+
+
+/* Form */
+.password label,
+.text label {
+	display: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	color: #fff;
+	display: block;
+	height: 20px;
+	line-height: 16px;
+	}
+	label.right {
+		float: left !important;
+		text-align: left;
+	}
+
+input:not([type=checkbox]) {
+	border: 1px solid #555;
+	border-radius: 5px;
+	display: block;
+	font-size: 22px;
+	width: 100%;
+}
+
+input:not([type=submit]) {
+	box-shadow: inset 5px 5px 5px rgba(50, 50, 50, .15);
+	color: #888;
+	padding: 5px 8px;
+}
+
+input.checkbox {
+	float: left;
+	margin-right: 10px;
+	padding: 0;
+}
+
+input[type=submit] {
+	background: linear-gradient(#93BE42, #1F9433);
+	color: #fff;
+	margin: 10px 0;
+	padding: 8px 0;
+	text-shadow: 1px 1px 0 #555;
+	}
+	.action:hover {
+		box-shadow: inset 0 1px 3px #17181a, 0 1px 0 rgba(255, 255, 255, 0.6);
+		text-shadow: -1px -1px 0 #555;
+	}
+
+#ForgotPassword {
+	margin: 10px 0 0;
+	}
+	#ForgotPassword a {
+		color: #fff;
+		display: block;
+		font-size: 70%;
+		text-align: center;
+	}
