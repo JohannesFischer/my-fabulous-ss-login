@@ -2,11 +2,10 @@
 <html lang="de">
 <head>
     <% base_tag %>
-    <title>SilverStripe CMS Login</title>
+    <title>SS Login</title>
     $MetaTags(false)
     <link rel="shortcut icon" href="/favicon.ico">
-	<% require themedCSS(foundation/normalize) %>
-	<% require themedCSS(foundation/foundation.min) %>
+	<% require themedCSS(normalize) %>
     <% require themedCSS(cmslogin) %>
 </head>
 <body class="LoginPage">
