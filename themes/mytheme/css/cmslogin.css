@@ -3,6 +3,7 @@
 
 body {
 	font-family: sans-serif;
+	min-height: 600px;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 	}
 
 .LoginPage {
-	background: ##B0BEC7;
+	background: #B0BEC7;
 	background: radial-gradient(#B0BEC7, #22385B);
 }
 
@@ -34,7 +35,7 @@ a {
 		text-decoration: underline;
 	}
 
-#CMSLogin {
+#CMSSecurity {
 	background: url(/framework/admin/images/silverstripe_logo.png) 50% 0 no-repeat;
 	margin: 5% auto 0;
 	padding: 200px 0 0;
@@ -94,8 +95,9 @@ input:not([type=checkbox]) {
 	width: 100%;
 }
 
-input[type=text],
-input[type=password] {
+input[type=email],
+input[type=password],
+input[type=text] {
 	box-shadow: inset 5px 5px 5px rgba(50, 50, 50, .15);
 	color: #888;
 	padding: 5px 0;
@@ -121,6 +123,10 @@ input[type=submit] {
 		box-shadow: inset 0 1px 3px #17181a, 0 1px 0 rgba(255, 255, 255, 0.6);
 		text-shadow: -1px -1px 0 #555;
 	}
+/* submit forgot password page */
+#MemberLoginForm_LostPasswordForm input[type=submit] {
+	font-size: 1em;
+}
 
 #ForgotPassword {
 	margin: 10px 0 0;
@@ -128,6 +134,6 @@ input[type=submit] {
 	}
 	#ForgotPassword a {
 		color: #fff;
-		font-size: 0.8em;
+		font-size: .8em;
 		text-align: center;
 	}
