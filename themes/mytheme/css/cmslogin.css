@@ -125,7 +125,7 @@ input[type=submit] {
 	}
 /* submit forgot password page */
 #MemberLoginForm_LostPasswordForm input[type=submit] {
-	font-size: 1em;
+	font-size: .8em;
 }
 
 #ForgotPassword {
