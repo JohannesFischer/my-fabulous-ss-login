@@ -5,7 +5,7 @@
     <title>$Title</title>
     $MetaTags(false)
     <link rel="shortcut icon" href="/favicon.ico">
-	<% require themedCSS(foundation/normalize) %>
+	<% require themedCSS(normalize) %>
     <% require themedCSS(cmslogin) %>
 </head>
 <body class="LoginPage">
@@ -21,21 +21,16 @@
 	<script>
 		// get label text and set placeholder
 		
-		// Login form
-		var login_form = document.getElementById('MemberLoginForm_LoginForm');
-		if (login_form) {
+		// Login Form
+		if (document.getElementById('MemberLoginForm_LoginForm')) {
 			// email
-			var label_email = document.getElementById('Email').getElementsByTagName('label')[0];
-			document.getElementById('MemberLoginForm_LoginForm_Email').placeholder = label_email.innerHTML;
+			document.getElementById('MemberLoginForm_LoginForm_Email').placeholder = document.getElementById('Email').getElementsByTagName('label')[0].innerHTML;
 			// password
-			var label_password = document.getElementById('Password').getElementsByTagName('label')[0];
-			document.getElementById('MemberLoginForm_LoginForm_Password').placeholder = label_password.innerHTML;
+			document.getElementById('MemberLoginForm_LoginForm_Password').placeholder = document.getElementById('Password').getElementsByTagName('label')[0].innerHTML;
 		}
 		// Forgot password form
-		var forgot_password_form = document.getElementById('MemberLoginForm_LostPasswordForm');
-		if (forgot_password_form) {
-			var label = document.getElementById('Email').getElementsByTagName('label')[0];
-			document.getElementById('MemberLoginForm_LostPasswordForm_Email').placeholder = label.innerHTML;	
+		if (document.getElementById('MemberLoginForm_LostPasswordForm')) {
+			document.getElementById('MemberLoginForm_LostPasswordForm_Email').placeholder = document.getElementById('Email').getElementsByTagName('label')[0].innerHTML;	
 		}		
 	</script>
 	
