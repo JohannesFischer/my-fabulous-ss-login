@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="$Locale">
 <head>
-    <% base_tag %>
-    <title>$Title</title>
-    $MetaTags(false)
-    <link rel="shortcut icon" href="/favicon.ico">
-	<% require themedCSS(normalize) %>
-    <% require themedCSS(cmslogin) %>
+  <% base_tag %>
+  <title>$Title</title>
+  $MetaTags(false)
+  <link rel="shortcut icon" href="/favicon.ico">
+	<% require themedCSS(reset) %>
+  <% require themedCSS(cmslogin) %>
 </head>
 <body class="LoginPage">
-    
-    <% if Content %>
-        <div class="PageContent">$Content</div>
-    <% end_if %>
 
-    <div id="CMSSecurity">
-        $Form
-    </div>
-	
+  <% if Content %>
+    <div class="PageContent">$Content.RAW</div>
+  <% end_if %>
+
+  <div id="CMSSecurity">
+    $Form
+  </div>
+
 	<script>
-		// get label text and set placeholder
-		
 		// Login Form
-		if (document.getElementById('MemberLoginForm_LoginForm')) {
+		if (document.querySelector('#MemberLoginForm_LoginForm')) {
 			// email
-			document.getElementById('MemberLoginForm_LoginForm_Email').placeholder = document.getElementById('Email').getElementsByTagName('label')[0].innerHTML;
+			document.querySelector('#MemberLoginForm_LoginForm_Email').placeholder = document.querySelector('#MemberLoginForm_LoginForm_Email_Holder label').innerHTML;
 			// password
-			document.getElementById('MemberLoginForm_LoginForm_Password').placeholder = document.getElementById('Password').getElementsByTagName('label')[0].innerHTML;
+			document.querySelector('#MemberLoginForm_LoginForm_Password').placeholder = document.querySelector('#MemberLoginForm_LoginForm_Password_Holder label').innerHTML;
 		}
 		// Forgot password form
-		if (document.getElementById('MemberLoginForm_LostPasswordForm')) {
-			document.getElementById('MemberLoginForm_LostPasswordForm_Email').placeholder = document.getElementById('Email').getElementsByTagName('label')[0].innerHTML;	
-		}		
+		if (document.querySelector('#MemberLoginForm_LostPasswordForm')) {
+			document.querySelector('#MemberLoginForm_LostPasswordForm_Email').placeholder = document.querySelector('#MemberLoginForm_LostPasswordForm_Email_Holder label').innerHTML;
+		}
 	</script>
-	
+
 </body>
 </html>

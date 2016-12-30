@@ -3,11 +3,12 @@
 
 body {
 	font-family: sans-serif;
-	min-height: 600px;
+	height: 100%;
+  min-height: 100vh;
 }
 
 a {
-	text-decoration: none;	
+	text-decoration: none;
 	}
 	a:hover {
 		text-decoration: underline;
@@ -25,9 +26,8 @@ a {
 	.PageContent p {
 		color: #ddd;
 		font-size: 0.9em;
-		height: 40px;
-		line-height: 40px;
 		margin: 0;
+    padding: .5em;
 		text-align: center;
 	}
 	.PageContent a {
@@ -36,9 +36,10 @@ a {
 	}
 
 #CMSSecurity {
-	background: url(/framework/admin/images/silverstripe_logo.png) 50% 0 no-repeat;
+	background: url(../images/SilverStripeLogo.png) 50% 0 no-repeat;
+	background-size: 300px;
 	margin: 5% auto 0;
-	padding: 200px 0 0;
+	padding: 300px 0 0;
 	width: 350px;
 }
 
@@ -49,10 +50,10 @@ p.message {
 	padding: 10px;
 	}
 	p.bad {
-		background: #F77D6A;
+		background: #f77d6a;
 	}
 	p.warning {
-		background: #F4B966
+		background: #f4b966
 	}
 
 /*
@@ -76,7 +77,7 @@ div.field.checkbox {
 }
 
 div.field.checkbox {
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 label {
@@ -114,8 +115,8 @@ input.checkbox {
 }
 
 input[type=submit] {
-	background: #93BE42;
-	background: linear-gradient(#93BE42, #1F9433);
+	background: #93be42;
+	background: linear-gradient(#93be42, #1f9433);
 	color: #fff;
 	margin: 0 0 10px;
 	padding: 8px 5px;
